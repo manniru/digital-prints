@@ -40,7 +40,7 @@
         <!-- home page -->
 		<div id="home" data-role="page" data-mini="true">
 			<div data-role="header"  data-position="fixed"  data-tap-toggle="false">
-                <h1>Digital Plant: Hi <span id="ffname"></span>!</h1>
+                <h1>Digital Plants<span id="ffname"></span>!</h1>
 			</div>
 			<div class="info-wrapper">
 				<div class="info-wrapper-left">
@@ -77,7 +77,7 @@ Dashboard <span id="numberOfFlights"></span></a></li></ul>
 <ul data-role="listview" id="search" data-inset="true" data-theme="d"><li><a href="#search" data-transition="slide">Search Plants</a></li></ul>                
 <ul data-role="listview" id="adsearch" data-inset="true" data-theme="d"><li><a href="#adsearch" data-transition="slide">Advanced Search</a></li></ul>                
 <ul data-role="listview" id="recordfind" data-inset="true" data-theme="d"><li><a href="#recordfind" data-transition="slide">Record a Find</a></li></ul>                
-<ul data-role="listview" id="export" data-inset="true" data-theme="d"><li><a href="#export" data-transition="slide">Export Records</a></li></ul>                
+<ul data-role="listview" id="form1" data-inset="true" data-theme="d"><li><a href="#form1" data-transition="slide">Export Records</a></li></ul>                
 <ul data-role="listview" id="about" data-inset="true" data-theme="d"><li><a href="#about" data-transition="slide">About Screen</a></li></ul>                
                 
 </div>
@@ -331,50 +331,70 @@ Dashboard <span id="numberOfFlights"></span></a></li></ul>
 			</div>
 		</div>
         
-		<!--myTrips page-->
-		<div id="quickbrowse" data-role="page" data-add-back-btn="true">
-			<div data-role="header" data-position="fixed"  data-tap-toggle="false">
-				<h1>Quick Browse</h1>
-			</div>
-			<div data-role="content">
-				<ul data-role="listview" id="myTripsListView" data-inset="true" data-theme="d">
-				</ul>
-			</div>
-		</div>       
+    
    
-<div id="recordfind" data-role="page" data-add-back-btn="true">
-<div data-role="header" data-position="fixed"  data-tap-toggle="false"><h1>Record a Find </h1></div>
-<div class="content">
-            <div class="input-area ch30">
-                <input class="inputBox" type="text" id="todo" placeholder="Add New Item" />
-                <button class="button" id="addButton" onclick="addTodo(); return false;">Add</button>
-			</div>
-            <div class="result-area ch70">
-                <div class="results">
-                    <div class="desc">Todo List:</div>
-                    <ul id="todoItems"></ul>
-                </div>
-                <div class="separator"></div>
-            </div> 
-		</div> 
-</div>
-
-
-
-
-
-
-
 
 
 
 
 
         
+        
+		<!-- logon page -->
+		<div id="form1" data-role="page" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed"  data-tap-toggle="false">
+				<h1>Login</h1>
+			</div>
+			<div data-role="content">
+				<form id="login">
+					Username:
+					<input type="text" id="userName" value="user@mail.com" />
+					Password:
+					<input type="password" id="pwd" value="P2ssw0rd" />
+					<input type="submit" value="Login" />
+				</form>
+			</div>
+		</div>        
+        
+
+
+
+
+
+        
+<!-- Record a find -->
+<div id="recordfind" data-role="page" data-add-back-btn="true">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false">
+				<h1>Record a Find</h1>
+			</div>
+			<div data-role="content">
+<form id="login2">
+Plant Name:<input type="text" id="name" value="" />
+Plant Type:<input type="text" id="type" value="" />
+Plant Color:<input type="text" id="color" value="" />
+Plant Description:<input type="text" id="desc" value="" />
+Plant Image Name:<input type="text" id="image" value="" />
+    
+    
+<input type="submit" value="Save" /></form></div></div> 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+        
 <div id="about" data-role="page" data-add-back-btn="true">
 <div data-role="header" data-position="fixed"  data-tap-toggle="false">
-<h1>About</h1></div><div data-role="content"><ul data-role="listview" id="Ul4" data-inset="true" data-theme="d">
-<li>About Digital Print Developed By: Zahra Maigari</li></ul></div></div>          
+<h1>About DigitalPrints</h1></div><div data-role="content"><ul data-role="listview" id="Ul4" data-inset="true" data-theme="d">
+<li>About Digital Print <br>
+Digital Print is the Application that allow you to view and add Plants using smart phone</li></ul></div></div>          
         
 <div id="details" data-role="page" data-add-back-btn="true">
 <div data-role="header" data-position="fixed"  data-tap-toggle="false">
@@ -385,8 +405,8 @@ Dashboard <span id="numberOfFlights"></span></a></li></ul>
                 
                 <div class="info-wrapper-right">
 					<div class="info">
-                        <div class="info-data" id="ffnum">Flower</div>
-						<div class="info-label" for="ffnum">Type:</div>
+                        <div class="info-data" id="ffnum">Habiscus Flower</div>
+						<div class="info-label" for="ffnum">Name:</div>
                         <div class="clear"></div>
 					</div>
 					<div class="info">
@@ -395,33 +415,32 @@ Dashboard <span id="numberOfFlights"></span></a></li></ul>
                         <div class="clear"></div>
 					</div>
 					<div class="info">
-                        <div class="info-data" id="currentStatus">Musa Spp</div>
-						<div class="info-label" for="currentStatus">Species:</div>
+                        <div class="info-data" id="currentStatus">Flower</div>
+						<div class="info-label" for="currentStatus">Type:</div>
                         <div class="clear"></div>
 </div></div><div class="clear"></div></div>
         
-<div class="info-wrapper"><div class="info-wrapper-left">
-<img src="images/dp3.png" width="100" height="100" />
-				</div>
-                
-                <div class="info-wrapper-right">
-					<div class="info">
-                        <div class="info-data" id="ffnum">Flower</div>
-						<div class="info-label" for="ffnum">Type:</div>
-                        <div class="clear"></div>
-					</div>
-					<div class="info">
-                        <div class="info-data" id="miles">Red</div>
-						<div class="info-label" for="miles">Color:</div>
-                        <div class="clear"></div>
-					</div>
-					<div class="info">
-                        <div class="info-data" id="currentStatus">Musa Spp</div>
-						<div class="info-label" for="currentStatus">Species:</div>
-                        <div class="clear"></div>
-</div></div><div class="clear"></div></div>       
-        
-        
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="images/dp3.png" width="100" height="100" /></div>
+<div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Sun Flower</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Red</div><div class="info-label" for="miles">Color:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">Flower</div><div class="info-label" for="currentStatus">Type:</div>
+<div class="clear"></div></div></div><div class="clear"></div></div>       
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="images/dp4.png" width="100" height="100" /></div>
+<div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Sun Flower</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Red</div><div class="info-label" for="miles">Color:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">Flower</div><div class="info-label" for="currentStatus">Type:</div>
+<div class="clear"></div></div></div><div class="clear"></div></div>   
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="images/dp.png" width="100" height="100" /></div>
+<div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Sun Flower</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Yellow</div><div class="info-label" for="miles">Color:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">Flower</div><div class="info-label" for="currentStatus">Type:</div>
+<div class="clear"></div></div></div><div class="clear"></div></div> 
         
         
         
@@ -438,6 +457,102 @@ Dashboard <span id="numberOfFlights"></span></a></li></ul>
         
         
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="quickbrowse" data-role="page" data-add-back-btn="true">
+<div data-role="header" data-position="fixed"  data-tap-toggle="false">
+<h1>Quick Browse</h1></div> 
+       
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a1.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Agapanthus</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">To 4 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div>       
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a2.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Agave</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">1-3 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div>   
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a3.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Ajuga</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Yellow</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">2-6 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a4.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Alstroemeria</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">2-5 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a5.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Anemone</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">1-4 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a6.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Artemisia</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial,Bulb</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">2-3 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a7.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Aster</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">1-3 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a8.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Astilbe</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">1-3 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a9.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Avens</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">Flower</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/a10.jpg" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Baby's breath</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">1-3 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/p1.png" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Flower</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Perennial</div><div class="info-label" for="miles">Color:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">1-3 feet tall</div><div class="info-label" for="currentStatus">Type:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+<div class="info-wrapper"><div class="info-wrapper-left"><img src="pictures/p2.png" width="100" height="100" /></div><div class="info-wrapper-right"><div class="info">
+<div class="info-data" id="ffnum">Flower</div><div class="info-label" for="ffnum">Name:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="miles">Yellow</div><div class="info-label" for="miles">Type:</div><div class="clear"></div></div><div class="info">
+<div class="info-data" id="currentStatus">2-5 feet tall</div><div class="info-label" for="currentStatus">Height:</div><div class="clear"></div></div></div><div class="clear"></div></div> 
+
+        
+</div>
+
+
+
+
+
+
+
         
 	
     </body>

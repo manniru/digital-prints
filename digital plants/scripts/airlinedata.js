@@ -4,7 +4,7 @@ var airlinesData = function(timeToLoad) {
 
 airlinesData.prototype = function() {
 	var ffInfo = {
-		firstName: 'Zahra', lastName: 'zahra', ffNum: '123456', status: 'Admin', miles: 55555,
+		firstName: 'Zahra', lastName: 'zahra', ffNum: 'admin', status: 'Admin', miles: 12345,
     
 		flights: [
 			{
